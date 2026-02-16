@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Start Forex Trading</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body{font-family:Arial,sans-serif;background:#f5f7fa;margin:0}
+.container{max-width:720px;margin:auto;background:#fff;padding:20px}
+h1{color:#1a237e}
+ul{line-height:1.8}
+.cta{display:block;text-align:center;background:#1a73e8;color:#fff;
+padding:15px;margin:20px 0;text-decoration:none;font-size:18px;border-radius:5px}
+.footer{font-size:12px;color:#777;text-align:center}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Trade Forex with a Trusted Broker</h1>
+
+<p>Start trading forex online with low deposit and mobile-friendly access.</p>
+
+<ul>
+  <li>✔ Low minimum deposit</li>
+  <li>✔ Mobile trading supported</li>
+  <li>✔ Fast deposits & withdrawals</li>
+  <li>✔ Available in Africa</li>
+</ul>
+
+<a id="tradeBtn" class="cta" href="#">
+Start Trading Now
+</a>
+
+<p class="footer">
+Trading involves risk. This page is for informational purposes only.
+</p>
+
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+const geo = params.get("geo") || "NA";
+const src = params.get("src") || "bidvertiser";
+const camp = params.get("camp") || "bv_campaign";
+const clickid = params.get("clickid") || "";
+
+const exnessLink =
+"https://YOUR_EXNESS_AFFILIATE_LINK_HERE/?" +
+"sub1=" + geo +
+"&sub2=" + src +
+"&sub3=" + camp +
+"&sub4=" + clickid;
+
+document.getElementById("tradeBtn").href = exnessLink;
+</script>
+
+</body>
+</html>
